@@ -1,0 +1,90 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body {
+    background-color: hsl(204, 86%, 23%);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;}
+.weather-app {
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;}
+.search-form {
+    display: flex;
+    align-items: center;}
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;}
+.search-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: backgroung-color 0.3s ease;}
+.search-btn:hover {
+    background-color: #2980b9;}
+.city-date-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;}
+.city-date-section .city {
+    font-size: 2rem;
+    opacity: 0.9;}
+.city-date-section .date {
+    background-color: #c3eaf4;
+    padding: 5px 10px;
+    border-radius: 15px;}
+.temperature-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;}
+.temperature-info .temp {
+    font-size: 10rem;}
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;}
+.temperature-info .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;}
+.temperature-info .description span {
+    font-size: 1.5rem;}
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;}
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color: #ecf0f1;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.additional-info .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;}
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;}

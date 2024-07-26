@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div id="header">
+    
+    <div class="container">
+        <nav>
+            <img src="piccccccccccc.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Portfolio</a></li>
+                <li><a href="https://wa.me/qr/36LB7QOQUJFZI1">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><u>UI/UX Designer </u> </p>
+            <h1>Hi, I'm <span>Krishna <br> Yadav</span> From <span>भारत</span></h1>
+            
+        </div>
+    </div>  
+</div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="">       
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <div class="tab-titles">
+                        
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS Apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UX/UI Design Training at GLA UNIVERSITY</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UX/UI Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at Google Cloud.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UX/UI Design Training at GLA UNIVERSITY</li>
+                            <li><span>Web Development</span><br>MCA from MIT Bangalore.</li>
+                            <li><span>App Development</span><br>BCA from GLA UNIVERSITY Mathura.</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Web design involves creating attractive, user-friendly web pages and web-based apps. User experience design, user interface design, and visual design all play key roles in the web design process. Web design teams take both form and functionality into account, balancing strong visuals with sound usability
+                    </p>
+                    <a href="index.html">learn more</a>
+                </div>
+                <div>
+                    <h2>UX/UI Design</h2>
+                    <p>Content in UX/UI design refers to the language that appears in a user interface1. Content design, also known as UX writing, is essentially designing with words
+                    </p>
+                    <a href="https://www.coursera.org/">learn more</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Defining the layout of the app
+                        Designing UI elements such as buttons, icons, text fields, and checkboxes (to name a few)
+                        Designing the app’s navigation system, including menus and navigation bars
+                        Making choices about the app’s typography, colour scheme, and imagery
+                        Designing the app’s interactive properties—what actions can the user take with the app? ...
+                    </p>
+                    <a href="https://clearbridgemobile.com">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontants){
+                tabcontant.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    </body>
+</html>
