@@ -1,4 +1,4 @@
-//1
+
 const balance = document.getElementById(
     "balance"
   );
