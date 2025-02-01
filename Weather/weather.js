@@ -49,4 +49,3 @@ function getWeatherIconName(weatherCondition) {
         Haze: "cloud",
         Fog: "cloud",};
     return iconMap[weatherCondition] || "help";}
-
