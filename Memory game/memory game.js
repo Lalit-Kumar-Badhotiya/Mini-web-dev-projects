@@ -10,10 +10,6 @@ let interval;
 let firstCard = false;
 let secondCard = false
 
-
-
-
-
 const items = [
   { name: "bee", image: "bee.png" },
   { name: "crocodile", image: "crocodile.png" },
