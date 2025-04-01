@@ -1,6 +1,5 @@
 
 
-
 const apiKey = '8d6454a89dff871786a0307b0dbebbee' //Api key should not be hard coded in the code it should be in envirnment variables (.env)
 async function fetchWeatherData(city) {
     try {const response = await fetch(
